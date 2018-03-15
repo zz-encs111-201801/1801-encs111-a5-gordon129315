@@ -1,0 +1,52 @@
+作业 5
+
+Question 1 : 代码
+    要求:
+        实现选硬币问题
+    提示:
+        你可能需要创建新的方法帮助递归
+    API 要求:
+        Solution:class 
+            public int solve(int[] coins)
+                返回最大价值
+
+Question 2 : 代码
+    要求:
+        实现背包问题
+    提示:
+        你可能需要创建新的方法帮助递归
+    API 要求:
+        Solution:class 
+            public int solve(int[][] items, int bagCapacity)
+                返回最大价值
+    调用案例
+        int[][] data = {{7, 42}, {3, 12}, {4, 40}, {5, 25}}
+        第一维度是 item
+        第二维度第一个值是重量，第二个是价值
+        int capacity = 14
+        new Solution().solve(data, capacity)
+
+Question 3 : 代码
+    要求:
+        实现切绳子问题
+    提示:
+        你可能需要创建新的方法帮助递归
+    API 要求:
+        Solution:class 
+            public int solve(int[][] prices, int length)
+                返回最大价值
+    调用案例
+        int[][] data = {{1, 1}, {2, 5}, {3, 8}, {4, 9}}
+        new Solution().solve(data, 10)
+        第一维度是 价格项
+        第二维度 第一个值是米数，第二个是价值
+            
+
+Question 4 :
+    要求:
+        换硬币问题
+    提示:
+        你可能需要创建新的方法帮助递归
+    API 要求:
+        Solution:class 
+            public int solve(int[] coins, int value)
