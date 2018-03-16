@@ -18,6 +18,7 @@ public class Q2Test {
 
     private Solution slt = new Solution();
 
+    @Test
     public void test0() {
         int items[][] = {{23, 92}, {31, 57}, {29, 49}, {44, 68}, {53, 60}, {38, 43}, {63, 67},
                 {85, 84}, {89, 87}, {82, 72}};
@@ -25,24 +26,28 @@ public class Q2Test {
         assertEquals(309, res);
     }
 
+    @Test
     public void test1() {
         int items[][] = {{12, 24}, {7, 13}, {11, 23}, {8, 15}, {9, 16}};
         int res = slt.solve(items, 26);
         assertEquals(51, res);
     }
 
+    @Test
     public void test2() {
         int items[][] = {{56, 50}, {59, 50}, {80, 64}, {64, 46}, {75, 50}, {17, 5}};
         int res = slt.solve(items, 190);
         assertEquals(150, res);
     }
 
+    @Test
     public void test3() {
         int items[][] = {{31, 70}, {10, 20}, {20, 39}, {19, 37}, {4, 7}, {3, 5}, {6, 10}};
         int res = slt.solve(items, 50);
         assertEquals(107, res);
     }
 
+    @Test
     public void test4() {
         int items[][] = {{25, 350}, {35, 400}, {45, 450}, {5, 20}, {25, 70}, {3, 8}, {2, 5}, {2,
                 5}};
@@ -50,6 +55,7 @@ public class Q2Test {
         assertEquals(900, res);
     }
 
+    @Test
     public void test5() {
         int items[][] = {{41, 442}, {50, 525}, {49, 511}, {59, 593}, {55, 546}, {57, 564}, {60,
                 617}};
@@ -57,6 +63,7 @@ public class Q2Test {
         assertEquals(1735, res);
     }
 
+    @Test
     public void test6() {
         int items[][] = {{70, 135}, {73, 139}, {77, 149}, {80, 150}, {82, 156}, {87, 163}, {90,
                 173}, {94, 184}, {98, 192}, {106, 201}, {110, 210}, {113, 214}, {115, 221}, {118,
@@ -65,6 +72,7 @@ public class Q2Test {
         assertEquals(1458, res);
     }
 
+    @Test
     public void test7() {
         int items[][] = {{382745, 825594}, {799601, 1677009}, {909247, 1676628}, {729069,
                 1523970}, {467902, 943972}, {44328, 97426}, {34610, 69666}, {698150, 1296457},
