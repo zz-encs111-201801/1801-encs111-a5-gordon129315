@@ -93,7 +93,7 @@ public class Q2Test {
     private String urlSPost = "_s.txt";
     private String urlCPost = "_c.txt";
 
-    @Test
+//     @Test
     public void generateTestCode() throws IOException {
         final int LEN = 8;
 
