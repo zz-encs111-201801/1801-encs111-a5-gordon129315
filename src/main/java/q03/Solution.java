@@ -2,7 +2,6 @@ package q03;
 
 
 import java.util.HashMap;
-import java.util.LinkedList;
 
 public class Solution {
 
@@ -20,25 +19,16 @@ public class Solution {
             return map.get(restOfLength);
         }
 
-        LinkedList<Integer> list = new LinkedList<>();
+        int maxPrice = 0;
         for (int i = 0; i < prices.length; i++) {
             if (prices[i][0] <= restOfLength) {
-                list.add(prices[i][1] + maxValueRecurse(prices, restOfLength - prices[i][0], map));
+                maxPrice = Math.max(maxPrice, prices[i][1] + maxValueRecurse(prices, restOfLength - prices[i][0], map));
             }
         }
 
-        int maxPrice = maxValueInList(list);
         map.put(restOfLength, maxPrice);
 
         return maxPrice;
-    }
-
-    private int maxValueInList(LinkedList<Integer> list) {
-        int max = Integer.MIN_VALUE;
-        for (int value : list) {
-            max = Math.max(max, value);
-        }
-        return max;
     }
 
 }
